@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeoBank X Pro Max</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone">
+
+<div class="dynamic-island" id="island">
+    <span id="islandText">🔒 Système sécurisé</span>
+</div>
+
+<div class="screen" id="screen">
+
+<!-- FACE ID PRO -->
+<div id="faceID" class="face-id">
+    <div class="camera-frame">
+        <div class="scan-line"></div>
+        <div class="grid"></div>
+    </div>
+    <p id="faceText">Analyse du visage...</p>
+</div>
+
+<!-- LOGIN -->
+<div id="login" class="hidden">
+    <h2>Connexion</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Mot de passe">
+    <button onclick="login()">Se connecter</button>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="hidden">
+
+<button class="mode-btn" onclick="toggleMode()">🌙 / ☀</button>
+
+<h2>NeoBank Premium</h2>
+
+<div class="balance">720000€</div>
+<div class="blocked">Compte bloqué – Dette non remboursée.</div>
+
+<!-- PREMIUM STATS -->
+<div class="stats">
+    <canvas id="monthlyChart"></canvas>
+</div>
+
+<!-- APPLE PAY -->
+<button class="apple-pay-btn" onclick="applePay()"> Pay</button>
+
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
