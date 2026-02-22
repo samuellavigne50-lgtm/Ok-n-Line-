@@ -1,0 +1,131 @@
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI";
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+.phone{
+width:390px;
+height:800px;
+background:black;
+border-radius:40px;
+padding:15px;
+position:relative;
+box-shadow:0 0 60px rgba(0,0,0,0.7);
+}
+
+.screen{
+width:100%;
+height:100%;
+border-radius:30px;
+padding:20px;
+color:white;
+overflow:auto;
+}
+
+.hidden{display:none;}
+
+.dynamic-island{
+position:absolute;
+top:10px;
+left:50%;
+transform:translateX(-50%);
+background:black;
+color:white;
+padding:8px 20px;
+border-radius:30px;
+font-size:12px;
+transition:0.4s;
+}
+
+.island-active{
+width:250px;
+background:#00c6ff;
+}
+
+.face-id{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+height:100%;
+}
+
+.camera-frame{
+width:200px;
+height:200px;
+border:3px solid #00c6ff;
+position:relative;
+border-radius:20px;
+overflow:hidden;
+}
+
+.scan-line{
+width:100%;
+height:3px;
+background:#00ffcc;
+position:absolute;
+animation:scan 2s infinite;
+}
+
+@keyframes scan{
+0%{top:0;}
+100%{top:100%;}
+}
+
+.grid{
+position:absolute;
+width:100%;
+height:100%;
+background-image:linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+background-size:20px 20px;
+}
+
+.balance{
+text-align:center;
+font-size:28px;
+margin:10px 0;
+}
+
+.blocked{
+background:#ff3b3b;
+padding:8px;
+border-radius:12px;
+text-align:center;
+margin-bottom:15px;
+}
+
+.stats{
+background:rgba(255,255,255,0.05);
+padding:10px;
+border-radius:15px;
+}
+
+.apple-pay-btn{
+width:100%;
+padding:15px;
+margin-top:15px;
+border:none;
+border-radius:20px;
+background:black;
+color:white;
+font-size:18px;
+font-weight:bold;
+box-shadow:0 0 20px rgba(255,255,255,0.4);
+cursor:pointer;
+transition:0.3s;
+}
+
+.apple-pay-btn:active{
+transform:scale(0.95);
+}
+
+.light{
+background:linear-gradient(135deg,#e3f2fd,#bbdefb) !important;
+color:#111 !important;
+}
